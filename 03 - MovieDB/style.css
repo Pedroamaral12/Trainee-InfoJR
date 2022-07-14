@@ -1,0 +1,144 @@
+* {
+    margin: 0px;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    font-family: 'Heebo', sans-serif;
+}
+
+:root {
+    --background-color: #1f2730;
+    --background-second-color: #262f38;
+    --title-color: rgba(189, 25, 25, 0.897);
+    --title-second-color: rgb(225, 232, 233);
+    --text-color: rgb(235, 235, 235);
+    --backgound-busca: rgba(225, 232, 233, 0.603);
+    --backgound-section: rgba(3, 3, 3, 0.5);
+}
+
+header {
+    margin-bottom: 2rem;
+    padding: 0rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    min-height: 4rem;
+    background-color: var(--background-second-color);
+    color: var(--title-second-color);
+    font-weight: 800;
+    font-size: x-large;
+}
+
+body {
+    background-color: var(--background-color);
+    max-width: 100%;
+}
+
+#section-container {
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color);
+    padding: 2rem 2rem;
+    gap: 1rem;
+    background-color: var(--backgound-section);
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 4rem;
+    border-radius: 10px;
+}
+
+#title {
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 700;
+    font-size: larger;
+}
+
+h1 {
+    color: var(--title-second-color);
+}
+
+#red-title {
+    color: var(--title-color);
+}
+
+img {
+    max-width: 30rem;
+    max-height: 35rem;
+    border-radius: 10px;
+}
+
+#inside-section-container {
+    display: flex;
+    gap: 1rem;
+}
+
+#overview {
+    text-align: justify;
+}
+
+#busca {
+    display: flex;
+    align-items: center;
+}
+
+#content-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: medium;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: large;
+}
+
+@media (max-width: 768px) {
+    #title {
+        display: flex;
+        justify-content: center;
+    }
+    img {
+        max-width: 35rem;
+        max-height: 40rem;
+    }
+    #inside-section-container {
+        display: flex;
+        flex-direction: column;
+    }
+    #poster {
+        display: flex;
+        justify-content: center;
+    }
+    #content-container {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: medium;
+    }
+    h3 {
+        font-weight: 400;
+        font-size: small;
+    }
+    h4 {
+        font-weight: 700;
+        font-size: medium;
+    }
+    img {
+        max-width: 20rem;
+        max-height: 25rem;
+    }
+    #title {
+        font-size: large;
+    }
+}

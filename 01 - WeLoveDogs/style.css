@@ -1,0 +1,221 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    bottom: 0%;
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 28px 15px 15px;
+    font-weight: 700;
+    font-size: 48px;
+    align-items: center;
+}
+
+#header-inscrever {
+    display: flex;
+    background-color: #7ED32166;
+    border-radius: 15px;
+    width: 151px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    gap: 35px;
+    font-size: 16px;
+    padding: 21px 21px 15px 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+#pagina01 {
+    display: flex;
+    flex-direction: column;
+    padding: 87px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    justify-content: left;
+}
+
+#botao-inicial {
+    width: 220px;
+    height: 51px;
+    background-color: #7ED321;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #1C4701;
+}
+
+#section-index {
+    display: flex;
+    flex-direction: row;
+}
+
+#imagem01 {
+    margin-top: 30px;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 14px;
+    font-weight: 700;
+    font-size: 48px;
+}
+
+#p-quemsomos {
+    display: flex;
+    padding: 14px 377px;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: justify;
+    justify-content: center;
+}
+
+#img02 {
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+}
+
+#section-blog {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: justify;
+    justify-content: center;
+}
+
+#img03 {
+    margin-bottom: 80px;
+    margin-right: 63px;
+    margin-top: 20px;
+}
+
+#img04 {
+    margin-right: 50px;
+}
+
+h2 {
+    margin-bottom: 23px;
+    margin-top: 45px;
+    font-weight: 700;
+    font-size: 32px;
+}
+
+#h1-blog {
+    margin-bottom: 50px;
+}
+
+#p-container-blog {
+    margin-right: 180px;
+}
+
+#inscrever {
+    display: flex;
+}
+
+#img05 {
+    display: flex;
+    flex-direction: row;
+}
+
+#inputs {
+    flex-direction: column;
+    display: flex;
+    gap: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    color: #9F9F9F;
+}
+
+#i-001 {
+    background: #FFFFFF;
+    border: 1px solid #9F9F9F;
+    border-radius: 7px;
+    width: 419px;
+    height: 43px;
+}
+
+#i-002 {
+    background: #FFFFFF;
+    border: 1px solid #9F9F9F;
+    border-radius: 7px;
+    width: 419px;
+    height: 43px;
+}
+
+#i-003 {
+    background: #FFFFFF;
+    border: 1px solid #9F9F9F;
+    border-radius: 7px;
+    width: 419px;
+    height: 43px;
+}
+
+#i-004 {
+    background: #FFFFFF;
+    border: 1px solid #9F9F9F;
+    border-radius: 7px;
+    width: 418px;
+    height: 160px;
+}
+
+.placeholder::placeholder {
+    display: flex;
+    margin-top: 12px;
+    margin-left: 13px;
+    justify-content: left;
+}
+
+
+/* Não altera os placeholders? */
+
+#p-insvcrever {
+    width: 124px;
+    height: 50px;
+    display: flex;
+    gap: 13px;
+    margin-left: 159px;
+}
+
+#botao-enviar {
+    width: 141px;
+    height: 42px;
+    background: #7ED321;
+    border-radius: 10px;
+    color: #1C4701;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+form {
+    display: flex;
+}
+
+
+/* aparentemente o arquivo travou, talvez por alguma dominancia ou erro de sixtaxe que não identifiquei */

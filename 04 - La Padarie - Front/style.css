@@ -1,0 +1,291 @@
+* {
+    padding: 0px;
+    list-style: none;
+    border: none;
+    text-decoration: none;
+    margin: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --background-header: #965A1B;
+    --backgound-body: #E5CF94;
+    --text-color: #5F3305;
+    --backgound-status: #FFFFFF;
+    --text-color-status: #000000;
+    --background-modal: #FFFFFF;
+    --color-enviar: #5F3305;
+    --color-cancelar: #DB1E1E;
+    --background-inputs: #F5F5F5;
+}
+
+body {
+    background-color: var(--backgound-body);
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    min-height: 13rem;
+    background-color: var(--background-header);
+}
+
+#logo-header {
+    margin-top: 2.5rem;
+    min-width: 5.2rem;
+    min-height: 5rem;
+}
+
+#status-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: -3rem;
+}
+
+.status {
+    display: flex;
+    background-color: var(--backgound-status);
+    color: var(--text-color-status);
+    border-radius: 5px;
+    min-width: 20%;
+    min-height: 4.5rem;
+    padding: 1rem 2rem;
+    flex-direction: column;
+}
+
+.titulo-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 20%;
+    min-height: 0.75rem;
+    margin-bottom: 1.2rem;
+    margin-top: 1.5;
+}
+
+#status-entrada {
+    background-color: var(--text-color);
+    color: var(--backgound-status);
+}
+
+#botao-lista {
+    background-color: var(--backgound-body);
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+#lista-container {
+    max-width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.modal-container {
+    background-color: rgb(0, 0, 0, .5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 2000;
+    top: 0px;
+    left: 0px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-container.visible {
+    display: flex;
+}
+
+.modal {
+    background-color: var(--background-modal);
+    padding: 2rem 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 4rem;
+    margin-top: 1.5rem;
+}
+
+.button-modal {
+    width: 11.5rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+#button-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+#button-enviar {
+    background-color: var(--color-enviar);
+    color: var(--background-inputs);
+}
+
+#button-cancel {
+    background-color: var(--background-color);
+    border-color: var(--color-cancelar);
+    color: var(--color-cancelar);
+    border: 1px solid;
+}
+
+input {
+    background-color: var(--background-inputs);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 24rem;
+    height: 2rem;
+}
+
+h1 {
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+#title {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#list-container {
+    display: flex;
+    flex-direction: column;
+    padding: 00.75rem;
+    gap: 0.3rem;
+}
+
+#list-money-breads-container {
+    display: flex;
+    gap: 1rem;
+}
+
+#lista {
+    display: flex;
+    flex-direction: column;
+    min-width: 60%;
+    margin-top: 1rem;
+    min-height: 25%;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+}
+
+#list-img {
+    margin-right: 0.75rem;
+}
+
+#list-img-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+p {
+    font-weight: 700;
+    font-size: 12px;
+    color: var(--text-color);
+}
+
+footer {
+    margin-top: 5rem;
+}
+
+.decoration {
+    font-weight: normal;
+}
+
+@media (max-width: 766px) {
+    #lista-container {
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px;
+        margin: auto;
+        margin-top: 5rem;
+    }
+    footer {
+        margin-top: 3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    #lista-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #status-container {
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+        margin-top: -60px;
+    }
+    header {
+        min-height: 26rem;
+    }
+    #logo-header {
+        min-height: 10rem;
+        min-width: 8rem;
+    }
+    #lista-container {
+        max-width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0px;
+        margin: auto;
+        margin-top: 5rem;
+    }
+    #title {
+        display: flex;
+        justify-content: center;
+    }
+    footer {
+        margin-top: 2rem;
+    }
+    #list-money-breads-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+}
